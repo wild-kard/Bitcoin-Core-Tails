@@ -36,7 +36,7 @@ paste in the following
 `proxy=127.0.0.1:9050`
 `onlynet=onion`
 `dns=0`
-dnsseed=0`
+`dnsseed=0`
 
 Press the escape key and type ':x' then press the enter key.
 
