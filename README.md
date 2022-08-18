@@ -47,3 +47,7 @@ $ `cat bitcoin.conf`
 You should see an output very similar to the above example. 
 
 You can now run bitcoin core, don't forget to set the data directory to the Bitcoin directory created inside of Persistent.
+
+
+Alternate
+wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz -P
