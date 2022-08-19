@@ -46,7 +46,9 @@ $ `cat bitcoin.conf`
 
 You should see an output very similar to the above example. 
 
-You can now run bitcoin core, don't forget to set the data directory to the Bitcoin directory created inside of Persistent.
+You can now run bitcoin core with
+`/home/amnesia/Persistent/bitcoin-23.0/bin/bitcoin-qt`
+don't forget to set the data directory to the Bitcoin directory created inside of Persistent.
 
 
 Alternate
