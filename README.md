@@ -41,13 +41,13 @@ paste in the following
 Press the escape key and type ':x' then press the enter key.
 
 ALTERNATIVE:
-`echo`
-`"prune=10000`
-`proxy=127.0.0.1:9050`
-`onlynet=onion`
-`dns=0`
-`dnsseed=0"`
-`> bitcoin.conf`
+`echo
+"prune=10000
+proxy=127.0.0.1:9050
+onlynet=onion
+dns=0
+dnsseed=0"
+> bitcoin.conf`
 
 You can now verify your bitcoin conf has been properly updated by typing
 
