@@ -21,27 +21,8 @@ $ `cd /home/amnesia/Persistent`
 $ `mkdir Bitcoin`
 
 Then create a `bitcoin.conf` file inside of your persistent directory
-
-$ `touch bitcoin.conf`
-
-then use vim to edit your bitcoin.conf file like so
-
-$ `vim bitcoin.conf`
-
-Press "i" to place vim into insert mode. 
-
-paste in the following 
-
-`prune=10000`
-`proxy=127.0.0.1:9050`
-`onlynet=onion`
-`dns=0`
-`dnsseed=0`
-
-Press the escape key and type ':x' then press the enter key.
-
-ALTERNATIVE:
 `cd Bitcoin`
+
 `echo "prune=10000 proxy=127.0.0.1:9050 onlynet=onion" > bitcoin.conf`
 
 You can now verify your bitcoin conf has been properly updated by typing
@@ -51,6 +32,7 @@ $ `cat bitcoin.conf`
 You should see an output very similar to the above example. 
 
 You can now run bitcoin core with
+`cd ..`
 `/home/amnesia/Persistent/bitcoin-23.0/bin/bitcoin-qt`
 don't forget to set the data directory to the Bitcoin directory created inside of Persistent.
 
