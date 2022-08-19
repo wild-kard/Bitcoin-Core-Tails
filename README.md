@@ -50,4 +50,8 @@ You can now run bitcoin core, don't forget to set the data directory to the Bitc
 
 
 Alternate
-wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz -P
+`wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz -P`
+
+
+If tails socks5 refuses to connect try configuring your iptables with the following command
+`sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 9050 -j ACCEPT`
