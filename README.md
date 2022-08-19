@@ -23,6 +23,7 @@ $ `mkdir Bitcoin`
 Then create a `bitcoin.conf` file inside of your persistent directory
 `cd Bitcoin`
 
+
 `echo "prune=10000 proxy=127.0.0.1:9050 onlynet=onion" > bitcoin.conf`
 
 You can now verify your bitcoin conf has been properly updated by typing
@@ -33,6 +34,7 @@ You should see an output very similar to the above example.
 
 You can now run bitcoin core with
 `cd ..`
+
 `/home/amnesia/Persistent/bitcoin-23.0/bin/bitcoin-qt`
 don't forget to set the data directory to the Bitcoin directory created inside of Persistent.
 
