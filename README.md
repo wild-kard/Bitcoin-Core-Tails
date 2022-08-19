@@ -50,8 +50,7 @@ You can now run bitcoin core, don't forget to set the data directory to the Bitc
 
 
 Alternate
-`wget https://bitcoincore.org/bin/bitcoin-core-0.23.0/bitcoin-0.23.0-x86_64-linux-gnu.tar.gz`
-
+https://bitcoincore.org/bin/bitcoin-core-23.0/bitcoin-23.0-x86_64-linux-gnu.tar.gz
 
 Note: If socks5 refuses to connect try configuring your iptables with the following command
 `sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 9050 -j ACCEPT`
