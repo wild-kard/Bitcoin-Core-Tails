@@ -16,6 +16,9 @@ then extract your download to your persistent folder (note the file name may be 
 
 $ `tar -xvzf bitcoin-23.0-x86_64-linux-gnu.tar.gz -C /home/amnesia/Persistent`
 
+
+STOP HERE IF YOU WANT TO RUN BITCOIN CORE ON THE INTERNAL DISK
+
 then create a `Bitcoin` folder inside of persistent. 
 
 $ `cd /home/amnesia/Persistent`
