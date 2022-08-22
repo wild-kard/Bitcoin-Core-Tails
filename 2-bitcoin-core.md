@@ -6,7 +6,7 @@ Install tails and create a persistent storage drive. Ensure that you have booted
 
 Navigate to the root terminal.
 
-run $ wget http://6hasakffvppilxgehrswmffqurlcjjjhd76jgvaqmsg6ul25s7t3rzyd.onion/en/download/
+run $ `wget http://6hasakffvppilxgehrswmffqurlcjjjhd76jgvaqmsg6ul25s7t3rzyd.onion/en/download/`
 
 then extract your download to your persistent folder (note the file name may be different)
 
