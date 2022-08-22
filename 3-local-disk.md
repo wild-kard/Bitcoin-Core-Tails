@@ -5,7 +5,7 @@ However, in order to do this, we also need to tell our tails .config to automati
 
 
 for me this means running
-`udisksctl mount -b /dev/nvme0n1p2
+`udisksctl mount -b /dev/nvme0n1p2`
 
 Your path will be slightly different based on the name of the local drive you wish to mount 
 
