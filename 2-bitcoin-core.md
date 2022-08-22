@@ -38,4 +38,4 @@ Alternate download link: https://bitcoincore.org/bin/bitcoin-core-23.0/bitcoin-2
 
 Note: Starting the core GUI and navigating to the settings window, and the Network tab and manually enabling the socks5 proxy seems more reliable than providing a config file
 
-Note: If socks5 refuses to connect try configuring your iptables with the following command sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 9050 -j ACCEPT
+Note: If socks5 refuses to connect try configuring your iptables with the following command `sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 9050 -j ACCEPT`
