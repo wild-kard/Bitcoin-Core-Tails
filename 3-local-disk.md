@@ -10,6 +10,19 @@ for me this means running
 Your path will be slightly different based on the name of the local drive you wish to mount 
 
 
-we will now take this script and make it autorun at startup.
+we will now take this script and make it autorun at startup by editing the tails dotfiles
+
+Navigate to 
+`/live/persistence/TailsData_unlocked/dotfiles`
+
+make a directory called .config
+`mkdir .config`
+
+insde of .config create a directory called autostart
+`cd .config`
+`mkdir autostart`
+
+
+
 
 
