@@ -1,6 +1,8 @@
 # Bitcoin-Core-Tails
 Install Bitcoin Core Using Tails
 
+This step assumes the user has already completed 1-installing-tails.md and has setup persistence.
+
 
 Install tails and create a persistent storage drive. Ensure that you have booted tails with an adminstrator password enabled.
 
