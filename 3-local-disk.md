@@ -5,7 +5,7 @@ However, in order to do this, we also need to tell our tails .config to automati
 
 
 for me this means running
-`udisksctl mount -b /dev/nvme0n1p2`
+`udisksctl mount --block-device /dev/nvme0n1p2`
 
 Your path will be slightly different based on the name of the local drive you wish to mount 
 
@@ -20,7 +20,11 @@ make a directory called .config
 
 insde of .config create a directory called autostart
 `cd .config`
+
 `mkdir autostart`
+
+create a .desktop file with the mount script we customized with the correct device path above 
+`echo "udisksctl mount --block-device /dev/nvme0n1p2" > mount_internal.desktop`
 
 
 
