@@ -12,7 +12,7 @@ then extract your download to your persistent folder (note the file name may be 
 
 $ `tar -xvzf bitcoin-23.0-x86_64-linux-gnu.tar.gz -C /home/amnesia/Persistent`
 
-STOP HERE IF YOU WISH TO USE AN INTERNAL DISK
+STOP HERE IF YOU WISH TO USE AN INTERNAL DISK INSTEAD OF THE TAILS PERSISTENT STORAGE
 
 then create a Bitcoin folder inside of persistent.
 
