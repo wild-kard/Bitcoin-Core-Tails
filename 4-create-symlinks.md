@@ -32,3 +32,5 @@ Now let's create our symlinks
 Restart Tails
 
 Your symlinks to internal drive/.bitcoin should now symlink to $HOME/.bitcoin
+
+Now proceed to step 5 and run fastsync.sh if you wish to temporarily disable tor for a faster initial sync. Otherwise, launch bitcoin-qt normally with Tor parameters (see step 2)
