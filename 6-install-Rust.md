@@ -2,6 +2,8 @@
 
 `sudo apt install -y build-essential`
 
+Above may not be necessary
+
 download and install rust
 `wget https://static.rust-lang.org/dist/rust-1.63.0-x86_64-unknown-linux-gnu.tar.gz`
 
