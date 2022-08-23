@@ -42,8 +42,11 @@ Now we need to give our new dotfiles directory and our new autostart script the 
  
  `cd /home/amnesia/Persistent/scripts/`
  
- create a .desktop file with the mount script we customized with the correct device path above 
+create a .desktop file with the mount script we customized with the correct device path above 
 `echo "#!/bin/bash \n udisksctl mount --block-device /dev/nvme0n1p2" > startup.sh`
+
+Make the file executable
+`sudo chmod +x /home/amnesia/Persistent/scripts/startup.sh`
 
 
 The specified interal disk should now automount at Log In
