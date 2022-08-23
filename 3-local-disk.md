@@ -25,6 +25,7 @@ insde of .config create a directory called autostart
 
 create a .desktop file with the mount script we customized with the correct device path above 
 `echo "#!/bin/bash
+
 udisksctl mount --block-device /dev/nvme0n1p2" > mount_internal.desktop`
 
 Now we need to give our new dotfiles directory and our new autostart script the proper permissions
