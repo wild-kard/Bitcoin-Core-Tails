@@ -23,19 +23,28 @@ insde of .config create a directory called autostart
 
 `mkdir autostart`
 
-create a .desktop file with the mount script we customized with the correct device path above 
-`echo "#!/bin/bash \n udisksctl mount --block-device /dev/nvme0n1p2" > mount_internal.desktop`
+create a startup file
+`echo "[Desktop Entry] \n
+X-GNOME-Autostart-enabled=true \n
+Exec=/home/amnesia/Persistent/scripts/startup.sh \n
+Encoding=UTF-8 \n
+Version=1.0 \n
+Type=Application \n
+Name=autostart \n
+Terminal=false" > mount_internal.desktop`
+
 
 Now we need to give our new dotfiles directory and our new autostart script the proper permissions
- `chmod u+x mount_internal.desktop`
+`sudo chmod -R 777 /live/persistence/TailsData_unlocked/dotfiles/.config/autostart`
  
- `cd ..`
+ navigate to your persistent directory and make a new directory called "scripts"
+ `mkdir -p /home/amnesia/Persistent/scripts/`
  
- `chmod u+x autostart`
+ `cd /home/amnesia/Persistent/scripts/`
  
- `cd ..`
- 
- `chmod u+x .config`
+ create a .desktop file with the mount script we customized with the correct device path above 
+`echo "#!/bin/bash \n udisksctl mount --block-device /dev/nvme0n1p2" > startup.sh`
+
 
 The specified interal disk should now automount at Log In
 
