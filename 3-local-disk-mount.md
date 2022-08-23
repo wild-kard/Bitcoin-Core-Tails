@@ -15,13 +15,8 @@ we will now take this script and make it autorun at startup by editing the tails
 Navigate to 
 `/live/persistence/TailsData_unlocked/dotfiles`
 
-make a directory called .config
-`mkdir .config`
-
-insde of .config create a directory called autostart
-`cd .config`
-
-`mkdir autostart`
+make your directories
+`mkdir --parents /live/persistence/TailsData_unlocked/dotfiles/.config/autostart`
 
 create a startup file
 `echo "[Desktop Entry] \n
