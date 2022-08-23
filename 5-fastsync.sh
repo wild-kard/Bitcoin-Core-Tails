@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 readonly SIZE=$(df --output=size --block-size=M . | tail -1 | head -c-2)
-readonly CHAINSTATE=$(du --block-size=M /media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/home/lappy/Bitcoin/chainstate | cut -f1 | head -c-2)
+readonly CHAINSTATE=$(du --block-size=M /media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/.bitcoin/chainstate | cut -f1 | head -c-2)
 readonly BUFFER=$((CHAINSTATE > 6144 ? 10 * CHAINSTATE / 6 : 10240))
 readonly RAM=$(($(awk '/MemAvailable/{print $2}' /proc/meminfo) / 1024))
 block_space=$((SIZE - BUFFER - CHAINSTATE))
 prune=$((block_space > 550 ? block_space : 550))
 dbcache=$(( RAM - 1408 > 450 ? RAM - 1408 : 450))	# an extra GB to dbcache since a 1GB swap is on
-readonly RPC_PARAMS='-rpcport=17600 -datadir=/media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/home/lappy/Bitcoin'
-if test -f "/media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/home/lappy/Bitcoin/bitcoind.pid"; then
+readonly RPC_PARAMS='-rpcport=17600 -datadir=/media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/.bitcoin'
+if test -f "/media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/.bitcoin/bitcoind.pid"; then
 	bitcoin-cli $RPC_PARAMS stop
 fi
 
