@@ -49,6 +49,6 @@ Make the file executable
 `sudo chmod +x /home/amnesia/Persistent/scripts/startup.sh`
 
 
-The specified interal disk should now automount at Log In
+The specified internal disk should now automount at Log In
 
 
