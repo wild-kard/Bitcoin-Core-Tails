@@ -37,6 +37,6 @@ Now we need to give our new dotfiles directory and our new autostart script the 
  
  `chmod u+x .config`
 
-
+The specified interal disk should now automount at Log In
 
 
