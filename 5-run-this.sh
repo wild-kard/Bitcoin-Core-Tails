@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-##TODO remove asking for sudo for each command that needs it.
-##TODO use cryptsetup refresh /dev/sda --allow-discards to make sync faster if the device can discard.
-##TODO create an "SOS" nuke data shortcut.
+
 readonly SIZE=$(df --output=size --block-size=M . | tail -1 | head -c-2)
 readonly CHAINSTATE=$(du --block-size=M /media/amnesia/a988dd30-61b1-49d7-88f4-50b8c450e5c0/home/lappy/Bitcoin/chainstate | cut -f1 | head -c-2)
 readonly BUFFER=$((CHAINSTATE > 6144 ? 10 * CHAINSTATE / 6 : 10240))
