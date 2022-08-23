@@ -32,6 +32,8 @@ Terminal=false" > mount_internal.desktop`
 Now we need to give our new dotfiles directory and our new autostart script the proper permissions
 `sudo chmod -R 777 /live/persistence/TailsData_unlocked/dotfiles/.config/autostart`
 
+`sudo chmod +x /live/persistence/TailsData_unlocked/dotfiles/.config/autostart/mount_internal.desktop`
+
 
 The specified internal disk should now automount at Log In
 
