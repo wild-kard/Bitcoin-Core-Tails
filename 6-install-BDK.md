@@ -14,3 +14,5 @@ Extract the tarball
 Run the rust-up installer
 `sudo bash /rust-1.63.0-x86_64-unknown-linux-gnu/install.sh`
 
+Use Cargo to install the BDK
+`cargo install --git https://github.com/bitcoindevkit/bdk-cli`
