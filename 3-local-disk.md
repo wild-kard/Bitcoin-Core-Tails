@@ -29,9 +29,13 @@ udisksctl mount --block-device /dev/nvme0n1p2" > mount_internal.desktop`
 
 Now we need to give our new dotfiles directory and our new autostart script the proper permissions
  `chmod u+x mount_internal.desktop`
+ 
  `cd ..`
+ 
  `chmod u+x autostart`
+ 
  `cd ..`
+ 
  `chmod u+x .config`
 
 
