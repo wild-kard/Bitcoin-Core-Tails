@@ -19,13 +19,13 @@ make your directories
 `mkdir --parents /live/persistence/TailsData_unlocked/dotfiles/.config/autostart`
 
 create a startup file
-`echo "[Desktop Entry] \n
-X-GNOME-Autostart-enabled=true \n
-Exec=/home/amnesia/Persistent/scripts/startup.sh \n
-Encoding=UTF-8 \n
-Version=1.0 \n
-Type=Application \n
-Name=autostart \n
+`echo "[Desktop Entry]
+X-GNOME-Autostart-enabled=true
+Exec=/home/amnesia/Persistent/scripts/startup.sh 
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=autostart
 Terminal=false" > mount_internal.desktop`
 
 
@@ -38,7 +38,8 @@ Now we need to give our new dotfiles directory and our new autostart script the 
  `cd /home/amnesia/Persistent/scripts/`
  
 create a .desktop file with the mount script we customized with the correct device path above 
-`echo "#!/bin/bash \n udisksctl mount --block-device /dev/nvme0n1p2" > startup.sh`
+`echo "#!/bin/bash
+udisksctl mount --block-device /dev/nvme0n1p2" > startup.sh`
 
 Make the file executable
 `sudo chmod +x /home/amnesia/Persistent/scripts/startup.sh`
