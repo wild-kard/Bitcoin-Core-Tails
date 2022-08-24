@@ -14,6 +14,10 @@ Extract the tarball
 Run the rust-up installer
 `sudo bash /rust-1.63.0-x86_64-unknown-linux-gnu/install.sh`
 
-Use Cargo to install the BDK
-`git clone https://github.com/bitcoindevkit/bdk`
-`cargo install --git https://github.com/bitcoindevkit/bdk-cli`
+git clone and use Cargo to install Arctica
+`git clone https://github.com/wild-kard/arctica`
+
+`cd arctica`
+currently stuck here need to navigate around tails firewalls to access depedencies from github for the cargo build
+`cargo build`
+
