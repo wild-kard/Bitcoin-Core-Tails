@@ -5,6 +5,7 @@
 Above may not be necessary
 
 download and install rust
+
 `wget https://static.rust-lang.org/dist/rust-1.63.0-x86_64-unknown-linux-gnu.tar.gz`
 
 Extract the tarball
@@ -12,12 +13,16 @@ Extract the tarball
 `tar -xvzf rust-1.63.0-x86_64-unknown-linux-gnu.tar.gz -C /home/amnesia/Persistent`
 
 Run the rust-up installer
+
 `sudo bash /rust-1.63.0-x86_64-unknown-linux-gnu/install.sh`
 
 git clone and use Cargo to install Arctica
+
 `git clone https://github.com/wild-kard/arctica`
 
 `cd arctica`
+
 currently stuck here need to navigate around tails firewalls to access depedencies from github for the cargo build
+
 `cargo build`
 
